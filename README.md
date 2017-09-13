@@ -158,7 +158,6 @@ Sometimes the classes are not in session so you have to wait a couple of months,
 
 You can use a language you are comfortable in to do the coding part of the interview, but for large companies, these are solid choices:
 
-- C++
 - Java
 - Python
 
@@ -175,7 +174,6 @@ Read more about choices:
 
 [See language resources here](programming-language-resources.md)
 
-You'll see some C, C++, and Python learning included below, because I'm learning. There are a few books involved, see the bottom.
 
 ## Book List
 
@@ -183,19 +181,8 @@ This is a shorter list than what I used. This is abbreviated to save you time.
 
 ### Interview Prep
 
-- [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
-    - answers in C++ and Java
-    - this is a good warm-up for Cracking the Coding Interview
-    - not too difficult, most problems may be easier than what you'll see in an interview (from what I've read)
 - [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
     - answers in Java
-
-If you have tons of extra time:
-
-- [ ] [Elements of Programming Interviews (C++ version)](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
-- [ ] Elements of Programming Interviews (Java version)
-    - [book](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/)
-    - [Companion Project - Method Stub and Test Cases for Every Problem in the Book](https://github.com/gardncl/elements-of-programming-interviews)
 
 ### Computer Architecture
 
@@ -227,8 +214,7 @@ If you have more time (I want this book):
 If you read though one of these, you should have all the data structures and algorithms knowledge you'll need to start doing coding problems.
 **You can skip all the video lectures in this project**, unless you'd like a review.
 
-[Additional language-specific resources here.](programming-language-resources.md)
-<!-- 
+<!--
 ### C++
 
 I haven't read these two, but they are highly rated and written by Sedgewick. He's awesome.
@@ -465,13 +451,13 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         (for when you pass a pointer to a function that may change the address where that pointer points)
         This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
         - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] implement (I did with tail pointer & without):
-        - [ ] size() - returns number of data elements in list
-        - [ ] empty() - bool returns true if empty
-        - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
+    - [x] implement (I did with tail pointer & without):
+        - [x] size() - returns number of data elements in list
+        - [x] empty() - bool returns true if empty
+        - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
         - [ ] push_front(value) - adds an item to the front of the list
-        - [ ] pop_front() - remove front item and return its value
-        - [ ] push_back(value) - adds an item at the end
+        - [x] pop_front() - remove front item and return its value
+        - [x] push_back(value) - adds an item at the end
         - [ ] pop_back() - removes end item and returns its value
         - [ ] front() - get value of front item
         - [ ] back() - get value of end item
@@ -490,11 +476,11 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
     - [ ] Will not implement. Implementing with array is trivial.
 
 - ### Queue
-    - [ ] [Using Queues First-In First-Out(video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Using-queues-first-first-out/149042/177122-4.html)
-    - [ ] [Queue (video)](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
-    - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
-    - [ ] [Priority Queues (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Priority-queues-deques/149042/177123-4.html)
-    - [ ] Implement using linked-list, with tail pointer:
+    - [x] [Using Queues First-In First-Out(video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Using-queues-first-first-out/149042/177122-4.html)
+    - [x] [Queue (video)](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
+    - [x] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
+    - [x] [Priority Queues (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Priority-queues-deques/149042/177123-4.html)
+    - [x] Implement using linked-list, with tail pointer:
         - enqueue(value) - adds value at position at tail
         - dequeue() - returns value and removes least recently added element (front)
         - empty()
@@ -503,7 +489,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - dequeue() - returns value and removes least recently added element
         - empty()
         - full()
-    - [ ] Cost:
+    - [x] Cost:
         - a bad implementation using linked list where you enqueue at head and dequeue at tail would be O(n)
             because you'd need the next to last element, causing a full traversal each dequeue
         - enqueue: O(1) (amortized, linked list and array [probing])
@@ -545,8 +531,8 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
     - [ ] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
     - [ ] [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
     - [ ] Implement:
-        - binary search (on sorted array of integers)
-        - binary search using recursion
+        - [ ] binary search (on sorted array of integers)
+        - [ ] binary search using recursion
 
 - ### Bitwise operations
     - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
